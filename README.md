@@ -8,7 +8,7 @@
 
 In building my first arrow functions I noticed that I couldn't apply the .classList.toggle until I had explicitly selected each element. I tried using the variable on it's own and this didn't work. Then I thought that it would perhaps work as a function within a function and it did!
 
-Another thing that caught me out was that I initially included a . before the class name, but the string was transferred verbatim and so the dot actually caused a bug. These both work however I found that of course my button was blurring to and so I will position the button absolutely outside of the container.
+Another thing that caught me out was that I initially included a . before the class name, but the string was transferred verbatim and so the dot actually caused a bug. These both work, however I found that my button was blurring to and so I repositioned the button absolutely outside of the container.
 
 `buttons.forEach(e => {e.addEventListener('click', blurImages)});`
 
