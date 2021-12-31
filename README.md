@@ -42,3 +42,4 @@ After positioning the buttons to absolute
 #### blur effect for background images
 
 - w3 <https://www.w3schools.com/howto/howto_css_blurred_background.asp>
+- MDN transitions (seperate with comma) <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions>

@@ -119,7 +119,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    transition: all;
+    transition: filter, -webkit-filter;
     transition-duration: 400ms;
 }
 
