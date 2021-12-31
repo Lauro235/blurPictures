@@ -1,3 +1,5 @@
+/* Image Imports */
+
 /* Font Imports */
 
 
@@ -48,6 +50,20 @@ html {
 *,*::before, *::after {
     box-sizing: inherit;
 }
+
+.bg-pic1 {
+
+}
+
+.bg-pic1:nth-child(1) {
+
+}
+
+.bg-pic1:nth-child(2) {
+
+}
+
+
 
 /*
 =======================
