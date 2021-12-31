@@ -1,5 +1,28 @@
 /* Image Imports */
 
+/*
+
+Night Sky
+main - https://unsplash.com/photos/eodA_8CTOFo
+direct - https://images.unsplash.com/photo-1509773896068-7fd415d91e2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80
+
+Waterfall
+main - https://unsplash.com/photos/DBGb9u1Yf6Q
+direct - https://images.unsplash.com/photo-1524338198850-8a2ff63aaceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80
+
+wallpaper
+
+desert night sky
+main - https://unsplash.com/photos/KCEwOduK8ck
+direct - https://images.unsplash.com/photo-1568405336404-1fefdca58699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+
+forest dawn
+main - https://unsplash.com/photos/0YDprNhG5_o
+direct - https://images.unsplash.com/photo-1568156341007-e87ac3d64580?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80
+
+*/
+
+
 /* Font Imports */
 
 
@@ -22,7 +45,7 @@ A tweak on the Eric Meyer reset block which you can find here https://meyerweb.c
 */
 
 html,	body,	div,	span,	object,	iframe,
-h1,	h2,	h3,	h4,	h5,	h6,
+h1,		h2,		h3,		h4,		h5,		h6,
 p,	blockquote,	pre,	abbr,	address,
 cite,	code,	del,	dfn,	em,	img,
 ins,	kbd,	q,	samp,	small,	strong,
@@ -51,16 +74,70 @@ html {
     box-sizing: inherit;
 }
 
-.bg-pic1 {
-
+body {
+    background-color: black;
 }
 
-.bg-pic1:nth-child(1) {
-
+.flex {
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    z-index: 1;
 }
 
-.bg-pic1:nth-child(2) {
+button {
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #faebd790;
+    transition: background-color;
+    transition-duration: 200ms;
+    font-size: 1.5rem;
+}
 
+button:hover {
+    background-color: #87cefa;
+}
+
+.wrapper {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1));
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 
+    height: 800px;
+    width: 800px;
+*/
+
+.bg-pic {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+.bg-pic__blur {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+/* night sky */
+
+.bg-pic:first-child {
+    background-image: url('https://images.unsplash.com/photo-1568405336404-1fefdca58699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+}
+
+/* waterfall */
+
+.bg-pic:nth-child(2) {
+    background-image: url('https://images.unsplash.com/photo-1568156341007-e87ac3d64580?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
 }
 
 
