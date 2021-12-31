@@ -1,0 +1,29 @@
+button triggers string input
+
+string input will be "width:${};"
+
+${} will equal the screen width
+
+Create Wrapper element
+Create 2 child divs with class = "bg-pic"
+Nest button in bg-pic divs
+
+give button a class of "pic1" and "pic2" respectively
+
+learn how to trigger events using button
+
+    You have two buttons that will trigger the same css rules therefore you can use querySelectorAll. Refresher needed.
+
+    Save button elements as variable in JavaScript using querySelectorAll
+
+    Use forEach method to assign an event listener to all buttons ('click', not-yet-made function name)
+
+    Make a simple function that brings up an alert when the user clicks the button
+
+Blur divs
+
+    Create blur effect in class .bg-pic__blur
+
+    Create new function which applies blur to background images
+
+Remove the buttons from the divs and position them absolutely
